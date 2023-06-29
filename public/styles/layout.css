@@ -14,12 +14,171 @@ html {
  * Global layout stuff
  */
 
+
 body {
   color: #545149;
   background-color: #f4f1ec;
   font-size: 24px;
+  font-family: 'Source Sans 3', sans-serif;
 }
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+
+ .hidden-error .char-err {
+  display: none;
+}
+.hidden-error .tweet-err {
+  display: none;
+}
+.hidden-error p{
+  border: solid;
+  border-color:  rgb(245, 217, 217);
+  background-color: rgb(255, 222, 222);
+  color: rgb(255, 14, 14);
+}
+
+
+.container {
+  width: 90%;
+  background-color: #f4f1ec;
+  text-align: center;
+  margin: auto;
+  padding-bottom: 100px;  
+}
+.tweet-article:hover {
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+ }
+ 
+.tweet-article {
+  width: 100%;
+  border: solid;
+  margin-bottom: 50px;
+}
+
+#tweet-text {
+  resize: vertical;
+  width: 90%;
+  margin-top: 10px; 
+  margin-bottom: 50px;
+  font-size: larger;
+  font-weight: bold;
+  background-color: #f4f1ec;
+  border: none;
+  border-bottom: solid;
+  border-color: navy;
+
+}
+.container .tweet-area {
+margin: auto;
+border-bottom: solid;
+width: 90%;
+}
+.tweet-count-area {
+width: 100%;
+display: flex;
+justify-content: space-between;
+padding-top: 25px;
+margin-bottom: 20px;
+
+}
+/* .tweets-container {
+  /*should this be larger like in the picture?   
+  background-color: #f4f1ec;
+  border: solid;
+  margin: auto;
+  
+} */
+
+
+ article.tweets-container header {
+padding-left: 20px;
+padding-right: 20px;
+display: flex;
+justify-content: space-between;
+ }
+
+ .tweets-container p {
+  font-weight: bold;
+  font-size: large;
+  padding-top: 10px;
+  padding-bottom: 20px;
+ }
+ .tweet-footer {
+  border-top: solid;
+ }
+ .tweets-container header {
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #f4f1ec;
+  color: black;
+  
+ }
+ 
+ .tweets-container p {
+  padding-left: 10px;
+  text-align: left;
+  font-weight: bold;
+  font-size: larger;
+
+ }
+
+ .tweets-container footer {
+  border-top: solid;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: larger;
+  margin-top: 50px;
+
+ }
+
+.tweets-container footer .icons:hover {
+  box-shadow: 0px 5px 10px 0px rgba(251, 135, 2, 0.5);
+ } 
+
+.tweets-container footer .fa-flag:hover {
+  box-shadow: 0px 5px 10px 0px rgba(236, 128, 5, 0.912);
+ }
+
+ .tweets-container footer .fa-retweet:hover {
+  box-shadow: 0px 5px 10px 0px rgba(236, 128, 5, 0.912);
+
+ }
+
+ .tweets-container footer .fa-heart:hover {
+  box-shadow: 0px 5px 10px 0px rgba(236, 128, 5, 0.912);
+
+ }
+
+
+/* tablet */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .tweets-container {
+    width: 100%;
+  }
+  .tweets-container footer {
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+}
+/* for desktop */
+@media (min-width: 1024px) {
+  .tweets-container {
+    width: 100%;
+  }
+
+  .tweets-container footer {
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+}
+

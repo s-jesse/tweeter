@@ -13,5 +13,13 @@
   background-color: #30448c;
 background-image: url("https://www.transparenttextures.com/patterns/bright-squares.png");
 
-
 }
+
+.tweet-header .avatar{ 
+  padding-right: 10px;
+}
+
+.tweet-header > h4{ 
+  font-size: larger;
+}
+
