@@ -45,10 +45,10 @@
     <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <!-- my 
   javascript external link -->
-<!-- <script defer src="/scripts/composer-char-counter.js"></script> -->
+<script defer src="/scripts/composer-char-counter.js"></script>
 
     <!-- App JS -->
-    <!-- <script type="text/javascript" defer src="/scripts/client.js"></script> -->
+    <script type="text/javascript" defer src="/scripts/client.js"></script>
     <script defer src=https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js></script>
   </head>
 
@@ -75,37 +75,22 @@
     <main class="container">
       <section class="new-tweet">
         <h2>Compose Tweet</h2>
-        <!-- <div class="hidden-error">
+        <div class="hidden-error">
           <p class="char-err">ERROR: too many characters, must be 140 maximum!</p>
           <p class="tweet-err">ERROR: must type message first!</p>
-        </div> -->
-        <div class="tweet-area">
+        </div>
         <form id="target" action="/tweets/" method="POST" >
           <label for="tweet-text">What are you humming about?</label>
           <textarea name="text" id="tweet-text"></textarea>
-        </div>
-          <div class="tweeting">
-            <button type="submit" class="tweet-button">Tweet</button>
+          <div class="tweet-count-area">
+            <button type="submit">Tweet</button>
             <output name="counter" class="counter" for="tweet-text">140</output>
           </div>
         </form>
       </section>
 
-      <article  class="tweets-container">
-        <header>
-          <h4 class="name"><img src="https://i.imgur.com/73hZDYK.png"> Newton </h4> 
-          <h4 class="user">@isaac</h4>
-        </header>
-        <p>Hello World!</p>
-        <footer>
-          <h6 class="date">10 days ago</h6>
-          <h6 class="icons">          
-            <i class="fa-solid fa-flag"></i>
-            <i class="fa-solid fa-retweet"></i>  
-            <i class="fa-solid fa-heart"></i>   
-          </h6>
-        </footer>
-      </article>
+      <section class="tweets-container">
+      </section>
     </main>
 
   </body>
