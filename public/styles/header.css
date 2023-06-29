@@ -1,0 +1,17 @@
+/* The visible portion of the header should have a height of 400px and be 100% the width of its parent container
+ */
+
+.main-header {
+  height: 100%; /* why did this work with padding ???*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
+  padding-top: 120px;
+  color: gold;
+  width: 100vw;
+  background-color: #30448c;
+background-image: url("https://www.transparenttextures.com/patterns/bright-squares.png");
+
+
+}

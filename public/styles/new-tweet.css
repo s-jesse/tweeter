@@ -1,0 +1,27 @@
+.new-tweet {
+  text-align: center;
+  margin: auto;
+}
+
+label {
+  font-weight: bold;
+  font-size: larger;
+  padding-right: 30px;
+  float: left;
+}
+output {
+  float: right;
+}
+
+button {
+  float: left;
+  font-weight:bolder;
+  font-size: larger;
+  background-color: navy;
+  color: white;
+}
+
+.counter {
+  font-weight: bolder;
+  font-size: larger;
+}

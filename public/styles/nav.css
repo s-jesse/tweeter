@@ -1,0 +1,41 @@
+/* full width viewport */
+
+nav {
+  width: 100vw;
+  height: 120px;
+  background-color: #4056A1;
+  color: #FFFFFF;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+
+
+  
+}
+
+nav span {
+  /* why is flex in here neede?? */
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: 'Bungee Inline', sans-serif;
+  margin-left: 1.5em;
+}
+
+nav > div {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  float: right;
+  margin-right: 1.5em;
+
+}
+
+.fa-solid {
+  text-align: center;
+/* center icon*/
+
+} 
