@@ -1,6 +1,5 @@
-$("#target").on("submit", function(event) {
+  $("#target").on("submit", function(event) {
   event.preventDefault();
-
   
   // validition error conditionals
 
@@ -43,13 +42,16 @@ const escape = function(str) {
   return div.innerHTML;
 };
 
-// icon stored variables
-
-const iconFlag = (`<i class="fa-solid fa-flag"></i>`);
-const iconRetweet = (`<i class="fa-solid fa-retweet"></i>`);
-const iconHeart = (`<i class="fa-solid fa-heart"></i>`);  
 
 // function to create html page dynamically
+
+const renderTweets = function(data) {
+  $('.tweets-container').empty();
+  for (let contentVal in data) {
+    const tweetElement = createTweetElement(data[contentVal]);
+    $('.tweets-container').prepend(tweetElement);
+  }
+};
 
 const createTweetElement = function(tweetObj) {
   const $tweet = (`<article class="tweet-article">
@@ -59,18 +61,13 @@ const createTweetElement = function(tweetObj) {
           </header>
             <p class="tweet-body">${escape(tweetObj.content.text)}</p>
               <footer class="tweet-footer">${timeago.format(tweetObj["created_at"])} 
-                <div class="icons">${iconFlag}${iconRetweet}${iconHeart}</div></footer>
-                  </article>`);
+                <div class="icons">
+                <i class="fa-solid fa-flag"></i>
+                <i class="fa-solid fa-retweet"></i>
+                <i class="fa-solid fa-heart"></i>
+                </div>
+              </footer>
+            </article>`);
 
-
-  let tweetElement = $('.tweets-container').prepend($tweet);
-  return tweetElement;
-
-};
-
-const renderTweets = function(data) {
-  for (let contentVal in data) {
-    createTweetElement(data[contentVal]);
-  }
-};
-
+  return $tweet;
+}
