@@ -4,6 +4,10 @@ Tweeter is a simple, single-page Twitter clone. It is built with HTML, CSS, JS, 
 
 ## Screenshots
 
+![Screenshot of tweeter header](https://github.com/s-jesse/tweeter/blob/master/docs/Header.png)
+![Screenshot of tweet with hover effect](https://github.com/s-jesse/tweeter/blob/master/docs/hover-tweet.png)
+![Screenshot of tweets with nav bar](https://github.com/s-jesse/tweeter/blob/master/docs/nav-tweets.png)
+
 ## Getting Started
 
 1. [Create](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template) a new repository using this repository as a template.
