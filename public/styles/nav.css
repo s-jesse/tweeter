@@ -16,7 +16,6 @@ nav {
 }
 
 nav span {
-  /* why is flex in here neede?? */
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -36,6 +35,4 @@ nav > div {
 
 .fa-solid {
   text-align: center;
-/* center icon*/
-
 } 

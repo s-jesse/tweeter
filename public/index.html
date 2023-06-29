@@ -1,36 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <!-- Meta Information -->
     <title>Tweeter - Home Page</title>
 
     <!-- External CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" type="text/css" />
-              
-        <!-- font awesoeme kit code  -->
+
+    <!-- font awesoeme kit code  -->
 
     <script src="https://kit.fontawesome.com/87b12b0b38.js" crossorigin="anonymous"></script>
 
     <!-- font awesoeme link  -->
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  
+
     <!-- google font Information  -->
 
-<!-- Bungee 400 -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap" rel="stylesheet">
-       
-<!-- sans pro 300 italic -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Source+Sans+3:ital,wght@1,300&display=swap" rel="stylesheet">
+    <!-- Bungee 400 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap" rel="stylesheet">
 
-<!-- sans pro 600 italic -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Source+Sans+3:ital,wght@1,300;1,600&display=swap" rel="stylesheet">
+    <!-- sans pro 300 italic -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Source+Sans+3:ital,wght@1,300&display=swap" rel="stylesheet">
+
+    <!-- sans pro 600 italic -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Source+Sans+3:ital,wght@1,300;1,600&display=swap" rel="stylesheet">
 
     <!-- App CSS -->
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
@@ -43,9 +44,9 @@
 
     <!-- External JS -->
     <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<!-- my 
+    <!-- my 
   javascript external link -->
-<script defer src="/scripts/composer-char-counter.js"></script>
+    <script defer src="/scripts/composer-char-counter.js"></script>
 
     <!-- App JS -->
     <script type="text/javascript" defer src="/scripts/client.js"></script>
@@ -58,19 +59,19 @@
     <nav>
       <span>tweeter</span>
       <div>
-      <p> "Write a new tweet"</p>
-      <i class="fa-solid fa-angles-down"></i>
+        <p> "Write a new tweet"</p>
+        <i class="fa-solid fa-angles-down"></i>
       </div>
     </nav>
     <header class="main-header">
       <div>
-          <img src="/images/profile-hex.png"> 
+        <img src="/images/profile-hex.png">
       </div>
       <br>
       <div>
-          <h2>Jesse</h2>
+        <h2>Jesse</h2>
       </div>
-  </header>
+    </header>
     <!-- Page-specific (main) content here -->
     <main class="container">
       <section class="new-tweet">
@@ -79,7 +80,7 @@
           <p class="char-err">ERROR: too many characters, must be 140 maximum!</p>
           <p class="tweet-err">ERROR: must type message first!</p>
         </div>
-        <form id="target" action="/tweets/" method="POST" >
+        <form id="target" action="/tweets/" method="POST">
           <label for="tweet-text">What are you humming about?</label>
           <textarea name="text" id="tweet-text"></textarea>
           <div class="tweet-count-area">
@@ -94,4 +95,5 @@
     </main>
 
   </body>
+
 </html>
