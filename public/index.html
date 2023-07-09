@@ -54,15 +54,15 @@
   </head>
 
   <body>
-
     <!-- Top nav bar (fixed) -->
     <nav>
       <span>tweeter</span>
       <div>
-        <p> "Write a new tweet"</p>
+        <p> Write a new tweet</p>
         <i class="fa-solid fa-angles-down"></i>
       </div>
     </nav>
+    <div class="header-section">
     <header class="main-header">
       <div>
         <img src="/images/profile-hex.png">
@@ -77,8 +77,7 @@
       <section class="new-tweet">
         <h2>Compose Tweet</h2>
         <div class="hidden-error">
-          <p class="char-err">ERROR: too many characters, must be 140 maximum!</p>
-          <p class="tweet-err">ERROR: must type message first!</p>
+          <p class="tweet-err"></p>
         </div>
         <form id="target" action="/tweets/" method="POST">
           <label for="tweet-text">What are you humming about?</label>
@@ -93,7 +92,7 @@
       <section class="tweets-container">
       </section>
     </main>
-
+  </div>
   </body>
 
 </html>

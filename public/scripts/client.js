@@ -1,16 +1,27 @@
+  $(document).ready(()=>{  
+    $(".hidden-error").slideUp();
   $("#target").on("submit", function(event) {
   event.preventDefault();
   
-  // validition error conditionals
 
-  let textLength = $('#tweet-text').val().length;
-  
-  if (textLength === 0) {
-    $(".hidden-error .tweet-err").css("display", "inline-block").slideDown("slow");
-  } else if (textLength >= 0) {
-    $(".hidden-error .tweet-err").css("display", "none");
-  }
 
+
+// desktop split
+
+
+  let textLength = $('#tweet-text').val().trim().length;
+
+  if (textLength > 140) {
+    console.log("textLength:", textLength)
+    $(".hidden-error").slideDown("slow")
+    $(".tweet-err").text("ERROR: too many characters, must be 140 maximum!")
+    return; 
+     } else if (textLength === 0) {
+    $(".hidden-error").slideDown("slow")
+    $(".tweet-err").text("ERROR: must type message first!")
+    return; 
+     }
+   
 
 // create ajax get/ post  and load tweets
 
@@ -18,6 +29,7 @@
 
   $.ajax("/tweets", { method: 'POST', data: serializeData })
     .then(function(data) {
+      $(".hidden-error").slideUp();
       loadTweets();
       $('#tweet-text').val('');
     });
@@ -71,3 +83,4 @@ const createTweetElement = function(tweetObj) {
 
   return $tweet;
 }
+})

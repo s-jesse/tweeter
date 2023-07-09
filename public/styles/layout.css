@@ -26,19 +26,21 @@ body {
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
 
- .hidden-error .char-err {
-  display: none;
-}
-.hidden-error .tweet-err {
-  display: none;
-}
-.hidden-error p{
-  border: solid;
+
+.hidden-error {
   border-color:  rgb(245, 217, 217);
+  border: solid;
   background-color: rgb(255, 222, 222);
-  color: rgb(255, 14, 14);
+  color: rgb(255, 15, 15);
+  font-weight: bolder;
+  font-size: larger;
 }
 
+.header-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
 .container {
   width: 90%;
@@ -46,6 +48,7 @@ body {
   text-align: center;
   margin: auto;
   padding-bottom: 100px;  
+  
 }
 .tweet-article:hover {
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
@@ -155,24 +158,48 @@ justify-content: space-between;
 
 /* Tablet */
 @media (min-width: 768px) and (max-width: 1024px) {
-  .tweets-container {
-    width: 100%;
+  .header-section {
+    display: flex;
+    flex-direction: column;
+    justify-content:  center;
+    align-items: center;
+    padding-top: 160px;
+    padding-right: 20px;
+    gap: 5em;
+
   }
-  .tweets-container footer {
-    padding-top: 5px;
-    padding-bottom: 10px;
-}
+  .main-header {
+    margin-top: 50px;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin:auto;
+  }
+  .main-header .container {
+    width: auto;
+  }
 
 }
-/* Desktop */
+/* Deskop */
 @media (min-width: 1024px) {
-  .tweets-container {
-    width: 100%;
+  .header-section {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    padding-top: 160px;
+    padding-right: 20px;
+    gap: 5em;
+
+  }
+  .main-header {
+    margin-top: 50px;
+    margin-right: 50px;
+    margin-left: 50px;
+  }
+  .main-header .container {
+      margin-top: 50px;
+      width: auto;
+
   }
 
-  .tweets-container footer {
-    padding-top: 5px;
-    padding-bottom: 10px;
-}
 }
 
