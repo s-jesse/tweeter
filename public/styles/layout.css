@@ -28,6 +28,7 @@ body {
 
 
 .hidden-error {
+  display: none;
   border-color:  rgb(245, 217, 217);
   border: solid;
   background-color: rgb(255, 222, 222);
@@ -97,6 +98,7 @@ justify-content: space-between;
  }
 
  .tweets-container p {
+  overflow-wrap: break-word;
   font-weight: bold;
   font-size: large;
   padding-top: 10px;
@@ -154,52 +156,54 @@ justify-content: space-between;
   box-shadow: 0px 5px 10px 0px rgba(236, 128, 5, 0.912);
 
  }
+
+
 /* MEDIA QUERY */
+
+/* Deskop */
+@media (min-width: 1024px) {
+  .header-section {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    padding-top: 160px;
+    padding-left: 20px;
+    gap: 5em;
+
+  }
+
+  .main-header .container {
+      margin-top: 50px;
+      width: auto;
+
+  }
+}
 
 /* Tablet */
 @media (min-width: 768px) and (max-width: 1024px) {
   .header-section {
     display: flex;
     flex-direction: column;
-    justify-content:  center;
-    align-items: center;
-    padding-top: 160px;
-    padding-right: 20px;
     gap: 5em;
 
   }
   .main-header {
-    margin-top: 50px;
-    margin-right: 50px;
-    margin-left: 50px;
-    margin:auto;
+    width: 100% !important;
   }
-  .main-header .container {
-    width: auto;
-  }
-
 }
-/* Deskop */
-@media (min-width: 1024px) {
+
+/* Mobile */
+@media (min-width: 400px) and (max-width: 767px) {
   .header-section {
     display: flex;
-    flex-direction: row;
-    justify-content:space-around;
-    padding-top: 160px;
-    padding-right: 20px;
+    flex-direction: column;
     gap: 5em;
 
   }
   .main-header {
-    margin-top: 50px;
-    margin-right: 50px;
-    margin-left: 50px;
+    width: 100% !important;
   }
-  .main-header .container {
-      margin-top: 50px;
-      width: auto;
-
-  }
-
 }
+
+
 

@@ -1,23 +1,21 @@
   $(document).ready(()=>{  
-    $(".hidden-error").slideUp();
   $("#target").on("submit", function(event) {
+
   event.preventDefault();
   
-
-
-
 // desktop split
 
 
   let textLength = $('#tweet-text').val().trim().length;
 
   if (textLength > 140) {
-    console.log("textLength:", textLength)
-    $(".hidden-error").slideDown("slow")
+    $(".hidden-error").slideDown("slow").delay(3500).slideUp('slow');
+    $(".hidden-error").css("display", "block")
     $(".tweet-err").text("ERROR: too many characters, must be 140 maximum!")
     return; 
      } else if (textLength === 0) {
-    $(".hidden-error").slideDown("slow")
+    $(".hidden-error").slideDown("slow").delay(3500).slideUp('slow');
+    $(".hidden-error").css("display", "block")
     $(".tweet-err").text("ERROR: must type message first!")
     return; 
      }

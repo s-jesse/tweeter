@@ -1,7 +1,7 @@
 /* full width viewport */
 
 nav {
-  width: 100vw;
+  width: 100%;
   height: 120px;
   background-color: #4056A1;
   color: #FFFFFF;
@@ -36,3 +36,19 @@ nav > div {
 .fa-solid {
   text-align: center;
 } 
+/* MEDIA QUERY */
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1024px) {
+nav{
+  background-image: url("https://www.transparenttextures.com/patterns/bright-squares.png");
+  background-color: #30448c;
+}
+}
+/* Mobile */
+@media (min-width: 400px) and (max-width: 767px) {
+nav {
+  background-image: url("https://www.transparenttextures.com/patterns/bright-squares.png");
+  background-color: #30448c;
+}
+}
